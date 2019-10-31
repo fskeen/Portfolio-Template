@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import colors from "../Style_Variables/colors";
 
 const NavBar = () => {
   const links = ["Home", "About", "Skills", "Work", "Contact"];
