@@ -87,7 +87,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 62.5%;
+  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -128,6 +128,14 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background: #1c1c1c;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 .Wrapper {
   display: flex;
   justify-content: space-around;
@@ -137,6 +145,7 @@ table {
 .futureStuff {
   width: 500px;
   height: 500px;
+  background-color: rgb(113, 119, 98);
   background-color: black;
   margin-top: 25px;
 }
