@@ -1,29 +1,31 @@
 import React from "react";
+import {SkillsItem} from './About.styled'
 
 const About = () => {
+  const skills = ["JavaScript", "React", "HTML", "CSS", "LESS", "React Router", "Node JS", "Express", "Redux", "Material UI", "styled-components", "SQL", "REST", "Git", "JSON", "Context API"]
   return (
-    <div className="Wrapper">
-      <div>
-        <h1>About Me</h1>
-        <p className="pExample">
-          Quisque nulla justo, gravida scelerisque lobortis in, tincidunt ac
-          orci. Integer placerat sem eu tortor imperdiet, sit amet auctor dolor
-          interdum. Etiam quis lacus condimentum, placerat nisi a, volutpat
-          purus. Nulla laoreet nunc at augue molestie congue. Aliquam blandit
-          nisl eu metus commodo, a sodales augue cursus.
-        </p>{" "}
-        <p className="pExample">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-          massa eget tortor gravida pharetra sed vitae metus. Donec euismod
-          eleifend ex quis faucibus. Fusce sed leo et lacus bibendum hendrerit a
-          vel est. Ut finibus mi vitae ex auctor, nec fermentum nibh
-          scelerisque. Duis commodo viverra eros sit amet efficitur. Integer
-          finibus enim id massa volutpat accumsan. Phasellus tristique vehicula
-          lorem, vel auctor nisl malesuada non. mauris.
-        </p>
-      </div>
-      <div className="futureStuff"></div>
-    </div>
+    <main>
+      <h2>About</h2>
+      <p>
+        Cupcake ipsum dolor sit amet wafer gingerbread tart. Chupa chups caramels fruitcake. Bonbon cookie croissant gingerbread macaroon sugar plum soufflé. Marshmallow lollipop cupcake toffee.
+      </p>
+      <p>
+        Sweet sesame snaps liquorice wafer. Lollipop halvah chocolate cake cheesecake. Bonbon dragée chocolate sweet chocolate tootsie roll.
+      </p>
+      <p>
+        Croissant cookie danish powder caramels sweet cookie chocolate bar dragée. Cake icing cotton candy halvah cake gummies candy canes. Chocolate bonbon cookie cookie dragée marzipan halvah tootsie roll. Gingerbread carrot cake sugar plum chocolate bar danish lollipop.
+      </p>
+      <section>
+        <h3>Skills</h3>
+        <ul>
+          {skills.map(skill => {
+            return (
+              <SkillsItem key={skill}>{skill}</SkillsItem>
+            )
+          })}
+        </ul>
+      </section>
+    </main>
   );
 };
 
