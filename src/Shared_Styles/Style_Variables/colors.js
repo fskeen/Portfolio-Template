@@ -18,6 +18,6 @@ export const randomColor = () => {
 // FONTS
 
 export const fonts = {
-  title: `'Bungee Shade', cursive;`,
+  title: `'Heebo', sans-serif;`,
   body: `'Open Sans', sans-serif;`
 }
