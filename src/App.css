@@ -132,6 +132,7 @@ table {
   display: flex;
   justify-content: space-around;
   border-bottom: 5px solid green;
+  background: #1d1d1d;
 }
 
 .futureStuff {
@@ -173,4 +174,8 @@ table {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
