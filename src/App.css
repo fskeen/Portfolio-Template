@@ -135,8 +135,8 @@ body {
   background-attachment: fixed;
 }
 html {
-  box-sizing: border-box;
-  font-size: 62.5%
+  box-sizing: border-box !important;
+  font-size: 62.5%;
 }
 * {
   max-width: 100%;
@@ -145,6 +145,7 @@ html {
   display: flex;
   justify-content: space-around;
   border-bottom: 5px solid green;
+  background: #1d1d1d;
 }
 
 .futureStuff {
@@ -187,4 +188,8 @@ html {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
