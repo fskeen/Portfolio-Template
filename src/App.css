@@ -145,7 +145,6 @@ html {
   display: flex;
   justify-content: space-around;
   border-bottom: 5px solid green;
-  background: #1d1d1d;
 }
 
 .futureStuff {
@@ -192,4 +191,8 @@ li {
 
 a {
   text-decoration: none;
+}
+.App {
+  display: flex;
+  flex-flow: row nowrap;
 }
