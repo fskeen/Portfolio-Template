@@ -76,7 +76,6 @@ const Nav = styled.nav`
   justify-content: center;
   height: 100vh;
   width: 70px;
-  position: fixed;
   top: 0;
 `;
 
