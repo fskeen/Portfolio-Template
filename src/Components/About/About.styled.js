@@ -29,7 +29,7 @@ export const StyledSVGTitle = styled.div`
 
 export const MainContainer = styled.main`
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   padding: 7rem 0 0 7rem;
   overflow-y: scroll;
   /* HIDING SCROLL BAR */
