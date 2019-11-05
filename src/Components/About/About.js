@@ -1,11 +1,16 @@
 import React from "react";
-import { PageTitle, SubTitle, SkillsItem, Paragraph, SmallSubTitle, MainContainer, SkillsList } from './About.styled'
+import { PageTitle, SubTitle, SkillsItem, Paragraph, SmallSubTitle, MainContainer, SkillsList, StyledSVGTitle } from './About.styled'
+import SvgAboutMeTitle from "../../Shared_Styles/SVGs/AboutMeTitle";
 
 const About = () => {
   const skills = ["JavaScript", "React", "HTML", "CSS", "LESS", "React Router", "Node JS", "Express", "Redux", "Material UI", "styled-components", "SQL", "RESTful APIs", "Git", "JSON", "Context API"]
   return (
     <MainContainer>
-      <PageTitle>About me</PageTitle>
+    <StyledSVGTitle>
+     <SvgAboutMeTitle />
+    </StyledSVGTitle>
+   
+      {/*<PageTitle>About me</PageTitle>*/}
       <Paragraph>
       Sweet sesame snaps liquorice wafer. Lollipop halvah chocolate cake cheesecake. Bonbon dragée chocolate sweet chocolate tootsie roll.
       </Paragraph>
