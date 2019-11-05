@@ -12,7 +12,7 @@ export const StyledSVGTitle = styled.div`
       }
       100% {  
          stroke-dashoffset: 800; 
-         fill: #c3f73a20;
+         fill: #c3f73a;
       }
    }
     stroke-dasharray: 1000;
@@ -20,8 +20,8 @@ export const StyledSVGTitle = styled.div`
     animation-name: draw;
     animation-duration: 5s;
     animation-fill-mode: reverse;
-    transition: fill 2s ease;
   }
+  margin-left: 1rem;
 `;
 
 /////////////
@@ -29,6 +29,16 @@ export const StyledSVGTitle = styled.div`
 
 export const MainContainer = styled.main`
   width: 100%;
+  height: 95vh;
+  padding: 7rem 0 0 7rem;
+  overflow-y: scroll;
+  /* HIDING SCROLL BAR */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+  ::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
   @media ${device.mobileL} {
     max-width: 60rem;
   }
@@ -46,7 +56,7 @@ export const PageTitle = styled.h2`
 export const SubTitle = styled.h3`
   color: ${colors.primary};
   font-family: ${fonts.title};
-  font-size: 5rem;
+  font-size:7rem;
   font-weight: 800;
   padding: 1rem 1rem 0 1rem;
   margin: 3rem 1rem 0 1rem;
@@ -67,11 +77,11 @@ export const Paragraph = styled.p`
   color: ${colors.text};
   font-family: ${fonts.body};
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2.75rem;
   padding: 1rem;
   margin: 01rem;
   @media ${device.mobileL} {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 `;
 

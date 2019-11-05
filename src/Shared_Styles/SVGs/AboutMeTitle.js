@@ -1,7 +1,7 @@
 import React from "react";
 
 const SvgAboutMeTitle = props => (
-  <svg width={700} height={130} viewBox="0 0 185.208 34.396" {...props}>
+  <svg width={500} height={130} viewBox="0 0 185.208 34.396" {...props}>
     <g
       aria-label="About me"
       style={{
@@ -13,7 +13,7 @@ const SvgAboutMeTitle = props => (
       fontFamily="Corbel"
       letterSpacing={0}
       wordSpacing={0.2}
-      fill="#c3f73a20"
+      fill="#c3f73a"
       stroke="#c3f73a"
       strokeWidth={1.192}
       strokeLinecap="square"

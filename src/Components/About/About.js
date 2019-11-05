@@ -6,17 +6,20 @@ const About = () => {
   const skills = ["JavaScript", "React", "HTML", "CSS", "LESS", "React Router", "Node JS", "Express", "Redux", "Material UI", "styled-components", "SQL", "RESTful APIs", "Git", "JSON", "Context API"]
   return (
     <MainContainer>
-    <StyledSVGTitle>
-     <SvgAboutMeTitle />
-    </StyledSVGTitle>
+      <div>
+        <StyledSVGTitle>
+        <SvgAboutMeTitle />
+        </StyledSVGTitle>
    
       {/*<PageTitle>About me</PageTitle>*/}
-      <Paragraph>
-      Sweet sesame snaps liquorice wafer. Lollipop halvah chocolate cake cheesecake. Bonbon dragée chocolate sweet chocolate tootsie roll.
-      </Paragraph>
-      <Paragraph>
-      Croissant cookie danish powder caramels sweet cookie chocolate bar dragée. Cake icing cotton candy halvah cake gummies candy canes. Chocolate bonbon cookie cookie dragée marzipan halvah tootsie roll. Gingerbread carrot cake sugar plum chocolate bar danish lollipop.
-      </Paragraph>
+      
+        <Paragraph>
+          Sweet sesame snaps liquorice wafer. Lollipop halvah chocolate cake cheesecake. Bonbon dragée chocolate sweet chocolate tootsie roll.
+        </Paragraph>
+        <Paragraph>
+          Croissant cookie danish powder caramels sweet cookie chocolate bar dragée. Cake icing cotton candy halvah cake gummies candy canes. Chocolate bonbon cookie cookie dragée marzipan halvah tootsie roll. Gingerbread carrot cake sugar plum chocolate bar danish lollipop.
+        </Paragraph>
+      </div>
       <section>
         <SubTitle>Skills</SubTitle>
         <Paragraph>
