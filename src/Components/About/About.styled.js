@@ -79,7 +79,8 @@ export const Paragraph = styled.p`
   font-size: 1.6rem;
   line-height: 2.75rem;
   padding: 1rem;
-  margin: 01rem;
+  margin: 1rem;
+
   @media ${device.mobileL} {
     font-size: 1.75rem;
   }
