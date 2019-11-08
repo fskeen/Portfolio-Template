@@ -42,3 +42,5 @@ export const Paragraph = styled.p`
     font-size: 1.75rem;
   }
 `;
+
+

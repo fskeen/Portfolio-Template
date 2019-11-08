@@ -11,7 +11,7 @@ const NavBar = () => {
     <Nav>
       <LinksList>
         <ListItem>
-          <StyledNavLink activeClassName="active" a exact to="/">
+          <StyledNavLink activeClassName="active" exact to="/">
             <IconSpan>
               <FontAwesomeIcon icon={faHome} />
             </IconSpan>
