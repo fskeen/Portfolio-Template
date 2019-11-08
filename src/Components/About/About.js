@@ -1,5 +1,6 @@
 import React from "react";
-import { PageTitle, SubTitle, SkillsItem, Paragraph, SmallSubTitle, MainContainer, SkillsList, StyledSVGTitle } from './About.styled'
+import { SkillsItem, MainContainer, SkillsList, StyledSVGTitle } from './About.styled'
+import {SubTitle, Paragraph, SmallSubTitle} from '../../Shared_Styles/TextStyles'
 import SvgAboutMeTitle from "../../Shared_Styles/SVGs/AboutMeTitle";
 
 const About = () => {

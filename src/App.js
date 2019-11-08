@@ -15,6 +15,7 @@ function App() {
 
 const AppWrapper = styled.div`
   display: flex;
+  width: 100%;
 `;
 
 export default App;
