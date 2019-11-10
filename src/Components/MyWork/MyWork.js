@@ -1,10 +1,17 @@
 import React from "react";
 
+import { MainContainer } from "./MyWork.styled";
+import {
+  SubTitle,
+  Paragraph,
+  SmallSubTitle
+} from "../../Shared_Styles/TextStyles";
+
 const MyWork = () => {
   return (
-    <div className="Wrapper">
-      <div className="portfolioDisplay"></div>
-    </div>
+    <MainContainer>
+      <Paragraph>Put Stuff Here</Paragraph>
+    </MainContainer>
   );
 };
 
