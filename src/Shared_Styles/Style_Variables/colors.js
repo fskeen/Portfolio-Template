@@ -5,7 +5,8 @@ export const colors = {
   primary: "#c3f73a",
   text: "#e5edcf",
   dark: "#0c0c0c",
-  navRegular: "#4d4d4e"
+  navRegular: "#4d4d4e",
+  accent1: "#13CDFF"
 };
 
 // RANDOM COLOR PICKER

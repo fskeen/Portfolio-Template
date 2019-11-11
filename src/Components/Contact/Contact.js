@@ -2,37 +2,63 @@ import React from "react";
 import { Form, Field, withFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import { PageTitle} from '../../Shared_Styles/TextStyles';
-import {Input, ParaInput, StyledForm, Label, Error, Button} from './Contact.styled'
+import {Input, ParaInput, StyledForm, Label, ErrorText, Button, Col, Row, Icon} from './Contact.styled';
+import {StyledSVGTitle} from '../About/About.styled'
+import SvgContactMeTitle from "../../Shared_Styles/SVGs/ContactMeTitle";
+import { Paragraph } from "../../Shared_Styles/TextStyles";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = ({errors, touched, values, handleSubmit, status}) => {
+
+  let icons = [1,1,1,1,1,1,1,1,1,1,1]
+  let count = -1
+
   return (
     <StyledForm action="https://formspree.io/xyyyzzwl" method="POST">
-    <PageTitle>Contact me</PageTitle>
-      <Label htmlFor="name">Your name</Label>
-        <Input
-            type="text"
-            name="name"
-            placeholder="Who are you?"
-            id="name" />
-      {touched.name && errors.name && <Error className="error-text">{errors.name}</Error>}
+      <StyledSVGTitle>
+        <SvgContactMeTitle />
+      </StyledSVGTitle>
+      <Paragraph>
+        Want to get in touch? Send me a message with the details.
+      </Paragraph>
+      <br/>
+      <br/>
+      <Row center>
+        {icons.map((icon, i) => <Icon icon={faChevronDown} key={i} order={count++} />)}
+      </Row>
+        {console.log(icons)}
+      <br/>
+      <br/>
 
-      <Label htmlFor="name">Your email</Label>
-        <Input
-            type="email"
-            name="email"
-            placeholder="Where to contact you?"
-            id="email" />
-      {touched.email && errors.email && <Error className="error-text">{errors.email}</Error>}
+      <Row>
+        <Col>
+          <Label htmlFor="name">Your name</Label>
+            <Input
+                type="text"
+                name="name"
+                placeholder="Who are you?"
+                id="name" />
+          {touched.name && errors.name && <ErrorText className="error-text">{errors.name}</ErrorText>}
+        </Col>
+        <Col>
+          <Label htmlFor="email">Your email</Label>
+            <Input
+                type="email"
+                name="email"
+                placeholder="Where to contact you?"
+                id="email" />
+          {touched.email && errors.email && <ErrorText className="error-text">{errors.email}</ErrorText>}
+        </Col>
+      </Row>
 
-      <Label htmlFor="name">Message</Label>
+      <Label htmlFor="message">Message</Label>
         <ParaInput
             component="textarea"
             name="message"
             placeholder="What would you like to talk about?"
             id="message" />
-      {touched.message && errors.message && <Error className="error-text">{errors.message}</Error>}
-  
+      {touched.message && errors.message && <ErrorText className="error-text">{errors.message}</ErrorText>}
+      <Icon icon={faChevronDown} order={count++} />
       <Button type="submit" value="Send">SUBMIT</Button>
     </StyledForm>
   );

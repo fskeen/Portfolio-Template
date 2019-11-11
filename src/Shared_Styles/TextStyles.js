@@ -38,9 +38,6 @@ export const Paragraph = styled.p`
   padding: 1rem;
   margin: 1rem;
 
-  @media ${device.mobileL} {
-    font-size: 1.75rem;
-  }
 `;
 
 

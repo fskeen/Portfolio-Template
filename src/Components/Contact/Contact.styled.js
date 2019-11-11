@@ -2,6 +2,21 @@ import styled, { keyframes } from 'styled-components'
 import { Field, Form } from 'formik'
 import { colors, fonts, randomColor, device } from '../../Shared_Styles/Style_Variables/colors'
 import { Paragraph } from '../../Shared_Styles/TextStyles';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export const Col = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: ${props => props.center ? "center" : "space-around"};
+  width: 100%;
+  justify-content: space-between;
+`;
 
 export const Input = styled(Field)`
   background-color: ${colors.text};
@@ -10,25 +25,31 @@ export const Input = styled(Field)`
   font-size: 2rem;
   border-radius: .5rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  ::placeholder {
+    color:teal;
+    font-family: ${fonts.body};
+  }
 `;
 
 export const ParaInput = styled(Input)`
   height: 20rem;
+  margin-left: 2rem;
 `;
 
 export const StyledForm = styled(Form)`
   display: flex;
   flex-flow: column nowrap;
-  margin: 5rem 5rem 0 5rem;
-  width: 50rem;
+  margin: 7rem 0 0 7rem;
+  width: 60rem;
 `;
 
 export const Label = styled.label`
-  color: ${colors.text};
+  color: ${colors.primary};
   font-family: ${fonts.body};
   font-size: 2rem;
   line-height: 2.75rem;
-  margin: 1rem 0;
+  margin: 1rem 0 1rem 2rem;
 `;
 
 const gradient = keyframes`
@@ -45,7 +66,7 @@ const gradient = keyframes`
 
 export const Button = styled.button`
     margin: .5rem;
-    width: 18rem;
+    width: 22rem;
     display: inline-block;
     padding: 1rem;
     font-size: 2.2rem;
@@ -55,7 +76,7 @@ export const Button = styled.button`
     border-radius: .7rem;
     transition: all 1s ease;
     color: ${randomColor};
-    align-self: flex-end;
+    align-self: center;
 
     &:hover {
     cursor: pointer;
@@ -102,13 +123,37 @@ export const Button = styled.button`
 //     }
 // `;
 
-export const Error = styled(Paragraph)`
+export const ErrorText = styled(Paragraph)`
   font-size: 1.4rem;
-  color: ${colors.primary};
+  color: ${colors.accent1};
   margin: -2rem;
   text-align: right;
 `;
 
+const iconAnim = keyframes`
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+100% {
+    transform: translateY(0px);
+  }
+`;
 
+const delays = [".33s", ".66s", "1s", "1.33s", "1.66s", "2s", "2.33s", "2.66s", "3s", "3.33s",  ]
+export const Icon = styled(FontAwesomeIcon)`
+  margin: 1.5rem;
+  color: ${randomColor};
+  font-size: 1.6rem; 
+  opacity: .5;
+  animation: ${iconAnim} 2s linear infinite;
+  animation-delay: ${props => delays[props.order]};
+  align-self: center;
+`;
 
 
