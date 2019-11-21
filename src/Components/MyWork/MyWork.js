@@ -7,28 +7,13 @@ import {
   Paragraph,
   SmallSubTitle
 } from "../../Shared_Styles/TextStyles";
+import { projects } from "./projects";
 
 const MyWork = () => {
-  const Projects = [
-    {
-      title: "Droom",
-      image: "https://i.imgur.com/jv5FtmK.png",
-      skills: ["html", "css"],
-      deployedUrl: "https://lambda-bw-droom.github.io/droom-landing/",
-      githubUrl: "https://github.com/lambda-bw-droom/droom-landing"
-    },
-    {
-      title: "Example",
-      image: "https://i.imgur.com/jv5FtmK.png",
-      skills: ["html", "css"],
-      deployedUrl: "https://lambda-bw-droom.github.io/droom-landing/",
-      githubUrl: "https://github.com/lambda-bw-droom/droom-landing"
-    }
-  ];
   return (
     <MainContainer>
       <DisplayContainer>
-        {Projects.map((project, i) => {
+        {projects.map((project, i) => {
           return <DisplayCard key={i} project={project} />;
         })}
       </DisplayContainer>

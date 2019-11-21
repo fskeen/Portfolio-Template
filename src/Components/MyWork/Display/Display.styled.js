@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import {
   colors,
   fonts,
@@ -12,7 +12,12 @@ height: 300px
 border: 1px solid pink
 `;
 
-export const Image = styled.img`
-width: 100%
-height: 100%
+const fadein = keyframes`
+  0% {
+    opacity: 1
+
+  }
+  100% {
+    opacity: 0
+  }
 `;
