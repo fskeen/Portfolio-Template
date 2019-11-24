@@ -7,18 +7,17 @@ import {
 } from "../../Shared_Styles/Style_Variables/colors";
 
 export const MainContainer = styled.main`
-  width: 100%;
-  height: 90vh;
-  padding: 7rem 0 0 7rem;
-  overflow-y: scroll;
-  /* HIDING SCROLL BAR */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-  @media ${device.mobileL} {
-    max-width: 60rem;
-  }
+  width: 100%
+  height: 100vh
+  display: flex;
+  justify-content: center;
+  align-items: center
+`;
+
+export const DisplayContainer = styled.main`
+  display: flex;
+  width: 90%
+  height: 90vh
+  border: 1px solid cyan;
+  margin: 10px
 `;
