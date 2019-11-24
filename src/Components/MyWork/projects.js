@@ -2,7 +2,9 @@ export const projects = [
   {
     title: "Allegiance",
     image: "https://i.imgur.com/kwjcipE.png",
-    skills: ["html", "css"],
+    primarySkills: ["React.js", "Node.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description: "lorem ipsum",
     deployedUrl: "https://www.allegiance17.com/",
     githubUrl: [
       "https://github.com/lambda-bw-droom/droom-landing",
@@ -12,7 +14,9 @@ export const projects = [
   {
     title: "Droom",
     image: "https://i.imgur.com/jv5FtmK.png",
-    skills: ["html", "css"],
+    primarySkills: ["Javascript"],
+    skills: ["HTML", "CSS", "Javascript", "LESS"],
+    description: "lorem ipsum",
     deployedUrl: "https://lambda-bw-droom.github.io/droom-landing/",
     githubUrl: "https://github.com/lambda-bw-droom/droom-landing"
   }

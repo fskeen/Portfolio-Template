@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { SkillsItem as Button1 } from "../../About/About.styled";
 import {
   colors,
   fonts,
@@ -6,52 +7,88 @@ import {
   randomColor
 } from "../../../Shared_Styles/Style_Variables/colors";
 
-export const CardContainer = styled.div`
-width: 390px
-height: 300px
-border: 1px solid pink
-`;
-
-export const Button = styled.button`
-  margin: 0.5rem;
-  width: 22rem;
-  display: inline-block;
-  padding: 1rem;
-  font-size: 2.2rem;
-  font-family: ${fonts.body};
-  border: 2px solid rgb(113, 119, 98);
-  background: none;
-  border-radius: 0.7rem;
-  transition: all 1s ease;
-  color: ${randomColor};
-  align-self: center;
-
-  &:hover {
-    cursor: pointer;
-    color: black;
-    border-color: black;
-    background-color: #f9ffea;
-    transition: all 0.2s ease;
-    text-shadow: 2px 2px 0 ${colors.primary};
-    box-shadow: 2px 2px 0px 0px ${colors.primary};
-  }
-
-  @media ${device.mobileS} {
-    max-width: 60rem;
+export const Card = styled.div`
+  width: 390px;
+  height: 300px;
+  position: relative;
+  /* display: flex;
+  flex-flow: column nowrap; */
+  background-color: rgba(0, 0, 0, 0.5);
   }
 `;
 
-export const HoverCard = styled.div`
+export const HoverDiv = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
+  position: relative;
 `;
 
-// const fadein = keyframes`
-//   0% {
-//     opacity: 1
+export const Image = styled.img`
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.5s;
+  ${Card}:hover & {
+    /* transition: opacity 0.5s; */
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    opacity: 0.1;
+    z-index: -2;
+  }
+`;
 
-//   }
-//   100% {
-//     opacity: 0
-//   }
-// `;
+export const ProjectInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s, transform 0.5s ease 0s;
+  h1 {
+    color: ${colors.primary};
+    font-family: ${fonts.title};
+    font-size: 2.25rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+    display: ;
+  }
+
+  ${HoverDiv}:hover & {
+    opacity: 1;
+    transform: translateY(60px);
+    transition: opacity 1.2s, transform 0.5s ease 0s;
+  }
+`;
+
+export const SkillList = styled.div`
+  display: flex;
+  flex-direction: row;
+  p {
+    color: ${colors.primary};
+    font-size: 1.5rem;
+    font-family: ${fonts.body};[]
+  }
+`;
+
+export const Button = styled(Button1)`
+  width: 35%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s, transform 0.5s ease 0s;
+
+  ${HoverDiv}:hover & {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: opacity 1.2s, transform 0.5s ease 0s;
+  }
+}
+`;
