@@ -51,7 +51,7 @@ export const ProjectInfo = styled.div`
   opacity: 0;
   transition: opacity 1s, transform 0.5s ease 0s;
   h1 {
-    color: ${colors.primary};
+    color: ${randomColor};
     font-family: ${fonts.title};
     font-size: 2.25rem;
     font-weight: 400;

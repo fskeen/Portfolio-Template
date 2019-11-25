@@ -2,18 +2,25 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Modal, { BaseModalBackground } from "styled-react-modal";
-import {Paragraph} from '../../../../Shared_Styles/TextStyles'
+import { CloseButton, CloseIcon, ProjectInfo, Title, Skills, Paragraph, LearnMore, ButtonsDiv, LinkButton } from "./ModalButton.styled"
+import ModalCarousel from "../Carousel/Carousel";
 
 const StyledModal = Modal.styled`
   width: 70rem;
-  height: 30rem;
+  min-height: 72rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: darkgrey;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: rgba(50,50,50,1);
   opacity: ${props => props.opacity};
   transition: opacity ease 1s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+  border-radius: .2rem;
+  position: relative;
 `;
+
+
 
 export const ModalButton = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +45,7 @@ export const ModalButton = (props) => {
 
   return (
     <div>
-      <button onClick={toggleModal}>Open modal</button>
+      <LearnMore onClick={toggleModal}>Learn More</LearnMore>
       <StyledModal
         isOpen={isOpen}
         afterOpen={afterOpen}
@@ -47,9 +54,26 @@ export const ModalButton = (props) => {
         onEscapeKeydown={toggleModal}
         opacity={opacity}
         backgroundProps={{ opacity }}
-      >
-        <Paragraph>{props.project.description}</Paragraph>
-        <button onClick={toggleModal}>Close me</button>
+        >
+      
+        <ModalCarousel project={props.project}/>
+        <ProjectInfo>
+          <Title>{props.project.title}</Title>
+          <Skills style={{display: "flex", flexDirection: "row"}}>{props.project.skills.map((skill, i) => (
+            <p style={{ marginRight: ".5rem", marginTop: ".5rem" }} key={i}>{skill}</p>
+          ))}
+          </Skills>
+          <Paragraph>{props.project.description}</Paragraph>
+          <ButtonsDiv>
+            <a href={props.project.deployedUrl} target="_blank">
+              <LinkButton>View Site</LinkButton>
+            </a>
+            <a href={props.project.githubUrl} target="_blank">
+            <LinkButton>View Code</LinkButton>
+            </a>
+          </ButtonsDiv>
+        </ProjectInfo>
+        <CloseButton onClick={toggleModal}><CloseIcon /></CloseButton>
       </StyledModal>
     </div>
   );
