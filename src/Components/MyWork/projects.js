@@ -12,6 +12,78 @@ export const projects = [
     ]
   },
   {
+    title: "Allegiance",
+    image: "https://i.imgur.com/kwjcipE.png",
+    primarySkills: ["JavaScript", "Node.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description: "lorem ipsum",
+    deployedUrl: "https://www.allegiance17.com/",
+    githubUrl: [
+      "https://github.com/lambda-bw-droom/droom-landing",
+      "https://github.com/Lambda-School-Labs/allegiance-fe"
+    ]
+  },
+  {
+    title: "Allegiance",
+    image: "https://i.imgur.com/kwjcipE.png",
+    primarySkills: ["React.js", "JavaScript"],
+    skills: ["HTML", "CSS", "React.js"],
+    description: "lorem ipsum",
+    deployedUrl: "https://www.allegiance17.com/",
+    githubUrl: [
+      "https://github.com/lambda-bw-droom/droom-landing",
+      "https://github.com/Lambda-School-Labs/allegiance-fe"
+    ]
+  },
+  {
+    title: "Allegiance",
+    image: "https://i.imgur.com/kwjcipE.png",
+    primarySkills: ["JavaScript", "Node.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description: "lorem ipsum",
+    deployedUrl: "https://www.allegiance17.com/",
+    githubUrl: [
+      "https://github.com/lambda-bw-droom/droom-landing",
+      "https://github.com/Lambda-School-Labs/allegiance-fe"
+    ]
+  },
+  {
+    title: "Allegiance",
+    image: "https://i.imgur.com/kwjcipE.png",
+    primarySkills: ["React.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description: "lorem ipsum",
+    deployedUrl: "https://www.allegiance17.com/",
+    githubUrl: [
+      "https://github.com/lambda-bw-droom/droom-landing",
+      "https://github.com/Lambda-School-Labs/allegiance-fe"
+    ]
+  },
+  {
+    title: "Allegiance",
+    image: "https://i.imgur.com/kwjcipE.png",
+    primarySkills: ["React.js", "Node.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description: "lorem ipsum",
+    deployedUrl: "https://www.allegiance17.com/",
+    githubUrl: [
+      "https://github.com/lambda-bw-droom/droom-landing",
+      "https://github.com/Lambda-School-Labs/allegiance-fe"
+    ]
+  },
+  {
+    title: "Allegiance",
+    image: "https://i.imgur.com/kwjcipE.png",
+    primarySkills: ["React.js", "Node.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description: "lorem ipsum",
+    deployedUrl: "https://www.allegiance17.com/",
+    githubUrl: [
+      "https://github.com/lambda-bw-droom/droom-landing",
+      "https://github.com/Lambda-School-Labs/allegiance-fe"
+    ]
+  },
+  {
     title: "Droom",
     image: "https://i.imgur.com/jv5FtmK.png",
     primarySkills: ["Javascript"],

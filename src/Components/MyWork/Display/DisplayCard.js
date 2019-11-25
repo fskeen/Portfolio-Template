@@ -27,8 +27,8 @@ const DisplayCard = props => {
         <ProjectInfo>
           <h1>{title}</h1>
           <SkillList>
-            {primarySkills.map(skill => (
-              <p style={{ margin: ".5rem" }}>{skill}</p>
+            {primarySkills.map((skill, i) => (
+              <p style={{ margin: ".5rem" }} key={i}>{skill}</p>
             ))}
           </SkillList>
         </ProjectInfo>
