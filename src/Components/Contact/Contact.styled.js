@@ -40,7 +40,7 @@ export const ParaInput = styled(Input)`
 export const StyledForm = styled(Form)`
   display: flex;
   flex-flow: column nowrap;
-  margin: 7rem 0 0 7rem;
+  margin: 7rem 0 0 14rem;
   width: 60rem;
 `;
 
