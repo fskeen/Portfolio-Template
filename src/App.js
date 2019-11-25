@@ -6,16 +6,19 @@ import styled from 'styled-components';
 
 function App() {
   return (
+    <>
+    <NavBar />
     <AppWrapper>
-      <NavBar />
       <AppRouter />
     </AppWrapper>
+    </>
   );
 }
 
 const AppWrapper = styled.div`
   display: flex;
   width: 100%;
+  margin-left: 8rem;
 `;
 
 export default App;
