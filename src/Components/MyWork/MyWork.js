@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import DisplayCard from "./Display/DisplayCard";
 
+import { Modal } from 'styled-react-modal';
 import { MainContainer, DisplayContainer } from "./MyWork.styled";
 import {
   SubTitle,

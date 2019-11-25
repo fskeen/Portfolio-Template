@@ -8,19 +8,18 @@ import {
 
 export const MainContainer = styled.main`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: column;
+  margin: 0 0 0 14rem;
 `;
 
 export const DisplayContainer = styled.main`
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
-  width: 90%;
-  height: 90vh;
-  border: 1px solid cyan;
+  width: 156rem;
   margin: 10px;
 `;

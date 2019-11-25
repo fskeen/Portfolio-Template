@@ -12,7 +12,7 @@ export const Card = styled.div`
   height: 300px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 0 .25rem .25rem 0;
+  // margin: 0 .25rem .25rem 0;
 `;
 
 export const HoverDiv = styled.div`
