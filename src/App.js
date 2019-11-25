@@ -18,7 +18,6 @@ function App() {
 const AppWrapper = styled.div`
   display: flex;
   width: 100%;
-  margin-left: 8rem;
 `;
 
 export default App;
