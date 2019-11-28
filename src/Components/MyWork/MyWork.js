@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react";
 import DisplayCard from "./Display/DisplayCard";
 
 import { Modal } from "styled-react-modal";
-import { MainContainer, DisplayContainer } from "./MyWork.styled";
+import {
+  MainContainer,
+  DisplayContainer,
+  FilterButton,
+  FilterButtonWrapper,
+  FilterButtonMenu
+} from "./MyWork.styled";
 import {
   SubTitle,
   Paragraph,
@@ -15,29 +21,33 @@ const MyWork = () => {
   const [selectedSkill, setSelectedSkill] = useState("All");
 
   const skillList = ["All", "JavaScript", "React.js", "Node.js"];
-
   useEffect(() => {
     const filtered = projects.filter(project =>
       project.primarySkills.includes(selectedSkill)
     );
     if (selectedSkill === "All") {
       setProjectList(projects);
-      console.log(projectList);
     } else {
       setProjectList(filtered);
-      console.log(filtered);
     }
   }, [selectedSkill]);
 
   return (
     <MainContainer>
-      <div>
-        {skillList.map((skill, i) => (
-          <button onClick={() => setSelectedSkill(skill)} key={i}>
-            {skill}
-          </button>
-        ))}
-      </div>
+      <FilterButtonMenu>
+        <FilterButtonWrapper>
+          {skillList.map((skill, i) => (
+            <FilterButton
+              className="filter"
+              data-filter={skill}
+              onClick={() => setSelectedSkill(skill)}
+              key={i}
+            >
+              {skill}
+            </FilterButton>
+          ))}
+        </FilterButtonWrapper>
+      </FilterButtonMenu>
       <DisplayContainer>
         {projectList.map((project, i) => {
           return <DisplayCard key={i} project={project} />;
