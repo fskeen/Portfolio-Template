@@ -6,10 +6,12 @@ import styled from 'styled-components';
 
 function App() {
   return (
+    <>
+    <NavBar />
     <AppWrapper>
-      <NavBar />
       <AppRouter />
     </AppWrapper>
+    </>
   );
 }
 

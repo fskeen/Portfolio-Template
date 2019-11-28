@@ -7,17 +7,19 @@ import {
 } from "../../Shared_Styles/Style_Variables/colors";
 
 export const MainContainer = styled.main`
-  width: 100%
-  height: 100vh
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: flex-start;
+  flex-flow: column;
+  margin: 0 0 0 14rem;
 `;
 
 export const DisplayContainer = styled.main`
   display: flex;
-  width: 90%
-  height: 90vh
-  border: 1px solid cyan;
-  margin: 10px
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: 156rem;
+  margin: 10px;
 `;

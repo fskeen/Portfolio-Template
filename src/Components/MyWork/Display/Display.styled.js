@@ -11,10 +11,8 @@ export const Card = styled.div`
   width: 390px;
   height: 300px;
   position: relative;
-  /* display: flex;
-  flex-flow: column nowrap; */
   background-color: rgba(0, 0, 0, 0.5);
-  }
+  // margin: 0 .25rem .25rem 0;
 `;
 
 export const HoverDiv = styled.div`
@@ -36,7 +34,7 @@ export const Image = styled.img`
   ${Card}:hover & {
     /* transition: opacity 0.5s; */
     transition-property: opacity;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease-out;
     transition-delay: 0s;
     opacity: 0.1;
@@ -53,13 +51,12 @@ export const ProjectInfo = styled.div`
   opacity: 0;
   transition: opacity 1s, transform 0.5s ease 0s;
   h1 {
-    color: ${colors.primary};
+    color: ${randomColor};
     font-family: ${fonts.title};
     font-size: 2.25rem;
     font-weight: 400;
     padding: 1rem;
     text-align: center;
-    display: ;
   }
 
   ${HoverDiv}:hover & {
@@ -75,7 +72,7 @@ export const SkillList = styled.div`
   p {
     color: ${colors.primary};
     font-size: 1.5rem;
-    font-family: ${fonts.body};[]
+    font-family: ${fonts.body};
   }
 `;
 
@@ -90,5 +87,4 @@ export const Button = styled(Button1)`
     transform: translateY(-60px);
     transition: opacity 1.2s, transform 0.5s ease 0s;
   }
-}
 `;

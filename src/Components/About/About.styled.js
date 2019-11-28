@@ -35,6 +35,7 @@ export const MainContainer = styled.main`
   height: 90vh;
   padding: 7rem 0 0 7rem;
   overflow-y: scroll;
+  margin-left: 7rem;
   /* HIDING SCROLL BAR */
   scrollbar-width: none;
   -ms-overflow-style: none;
