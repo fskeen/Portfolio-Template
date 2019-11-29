@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch } from "react-router-dom";
+import { ModalProvider } from 'styled-react-modal';
 
 import Home from "../Home/Home";
 import About from "../About/About";
@@ -9,6 +10,7 @@ import Contact from "../Contact/Contact";
 
 function AppRouter() {
   return (
+    <ModalProvider>
       <Switch>
         <Home exact path="/" component={Home} />
         <About path="/about" component={About} />
@@ -16,6 +18,7 @@ function AppRouter() {
         <MyWork path="/work" component={MyWork} />
         <Contact path="/contact" component={Contact} />
       </Switch>
+    </ModalProvider>
   );
 }
 

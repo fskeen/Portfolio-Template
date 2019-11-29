@@ -77,6 +77,8 @@ const Nav = styled.nav`
   height: 100vh;
   width: 70px;
   top: 0;
+  position: fixed;
+  z-index: 10;
 `;
 
 const LinksList = styled.ul`
