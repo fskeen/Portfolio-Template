@@ -40,7 +40,7 @@ const DisplayCard = props => {
         {/* <Button>Learn More</Button> */}
         <ModalButton project={props.project}/>
       </HoverDiv>
-      <Image src={image} />
+      <Image src={image} height="300" />
     </Card>
   );
 };
