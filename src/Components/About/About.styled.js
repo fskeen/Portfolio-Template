@@ -13,10 +13,12 @@ export const StyledSVGTitle = styled.div`
       0% {
         stroke-dashoffset: 1000;
         fill: rgba(0, 0, 0, 0);
+        stroke: yellow;
       }
       100% {
         stroke-dashoffset: 800;
         fill: #c3f73a;
+        stroke: #c3f73a;
       }
     }
     stroke-dasharray: 1000;
@@ -33,9 +35,8 @@ export const StyledSVGTitle = styled.div`
 export const MainContainer = styled.main`
   width: 100%;
   height: 90vh;
-  padding: 7rem 0 0 7rem;
+  padding: 7rem 0 0 0;
   overflow-y: scroll;
-  margin-left: 7rem;
   /* HIDING SCROLL BAR */
   scrollbar-width: none;
   -ms-overflow-style: none;
