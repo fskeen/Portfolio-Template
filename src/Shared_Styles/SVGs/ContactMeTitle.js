@@ -13,7 +13,7 @@ const SvgContactMeTitle = props => (
       fontFamily="Corbel"
       letterSpacing={0}
       wordSpacing={0}
-      fill="none"
+      fill="#c3f73a"
       stroke="#c3f73a"
       strokeWidth={1.192}
       strokeLinecap="square"
