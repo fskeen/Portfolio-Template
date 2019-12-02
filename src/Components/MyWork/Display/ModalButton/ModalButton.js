@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import styled from "styled-components";
-import Modal, { BaseModalBackground } from "styled-react-modal";
+import Modal from "styled-react-modal";
 import { CloseButton, CloseIcon, ProjectInfo, Title, Skills, Paragraph, LearnMore, ButtonsDiv, LinkButton } from "./ModalButton.styled"
 import ModalCarousel from "../Carousel/Carousel";
 
@@ -65,10 +63,10 @@ export const ModalButton = (props) => {
           </Skills>
           <Paragraph>{props.project.description}</Paragraph>
           <ButtonsDiv>
-            <a href={props.project.deployedUrl} target="_blank">
+            <a href={props.project.deployedUrl} target="_blank" rel="noopener noreferrer">
               <LinkButton>View Site</LinkButton>
             </a>
-            <a href={props.project.githubUrl} target="_blank">
+            <a href={props.project.githubUrl} target="_blank" rel="noopener noreferrer">
             <LinkButton>View Code</LinkButton>
             </a>
           </ButtonsDiv>
@@ -79,7 +77,7 @@ export const ModalButton = (props) => {
   );
 }
 
-const FadingBackground = styled(BaseModalBackground)`
-  opacity: ${props => props.opacity};
-  transition: opacity ease 200ms;
-`;
+// const FadingBackground = styled(BaseModalBackground)`
+//   opacity: ${props => props.opacity};
+//   transition: opacity ease 200ms;
+// `;

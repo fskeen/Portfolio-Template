@@ -1,4 +1,4 @@
-import { colors, fonts, device } from "./Style_Variables/colors";
+import { colors, fonts } from "./Style_Variables/colors";
 import styled from "styled-components";
 
 export const PageTitle = styled.h2`

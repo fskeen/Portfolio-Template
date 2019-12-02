@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import { MainContainer, Button } from "./Home.styled";
 import {
   SubTitle,
-  Paragraph,
-  SmallSubTitle
+  Paragraph
 } from "../../Shared_Styles/TextStyles";
 
 const Home = () => {

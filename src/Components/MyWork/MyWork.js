@@ -2,20 +2,20 @@ import React, { useState, useEffect } from "react";
 import DisplayCard from "./Display/DisplayCard";
 import MyWorkTitle from '../../Shared_Styles/SVGs/MyWorkTitle'
 import {StyledSVGTitle} from '../About/About.styled'
-import { Modal } from "styled-react-modal";
+// import { Modal } from "styled-react-modal";
 import {
   MainContainer,
   DisplayContainer,
   FilterButton,
-  FilterButtonWrapper,
+  // FilterButtonWrapper,
   FilterButtonMenu,
   Para
 } from "./MyWork.styled";
-import {
-  SubTitle,
-  Paragraph,
-  SmallSubTitle
-} from "../../Shared_Styles/TextStyles";
+// import {
+//   SubTitle,
+//   Paragraph,
+//   SmallSubTitle
+// } from "../../Shared_Styles/TextStyles";
 import { projects } from "./projects";
 
 const MyWork = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Field, withFormik } from 'formik';
+import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import {Input, ParaInput, StyledForm, Label, ErrorText, Button, Col, Row, Icon} from './Contact.styled';
@@ -8,7 +8,7 @@ import SvgContactMeTitle from "../../Shared_Styles/SVGs/ContactMeTitle";
 import { Paragraph } from "../../Shared_Styles/TextStyles";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const Contact = ({errors, touched, values, handleSubmit, status}) => {
+const Contact = ({errors, touched}) => {
 
   let icons = [1,1,1,1,1,1,1,1,1,1,1]
   let count = -1
@@ -26,7 +26,6 @@ const Contact = ({errors, touched, values, handleSubmit, status}) => {
       <Row center>
         {icons.map((icon, i) => <Icon icon={faChevronDown} key={i} order={count++} />)}
       </Row>
-        {console.log(icons)}
       <br/>
       <br/>
 

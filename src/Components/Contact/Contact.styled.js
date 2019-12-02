@@ -52,17 +52,17 @@ export const Label = styled.label`
   margin: 1rem 0 1rem 2rem;
 `;
 
-const gradient = keyframes`
-    0% {
-        background-position: 14% 0%;
-    }
-    50% {
-        background-position: 87% 100%;
-    }
-    100% {
-        background-position: 14% 0%;
-    }
-`
+// const gradient = keyframes`
+//     0% {
+//         background-position: 14% 0%;
+//     }
+//     50% {
+//         background-position: 87% 100%;
+//     }
+//     100% {
+//         background-position: 14% 0%;
+//     }
+// `
 
 export const Button = styled.button`
     margin: .5rem;

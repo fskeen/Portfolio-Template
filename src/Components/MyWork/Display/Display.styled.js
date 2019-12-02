@@ -1,9 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { SkillsItem as Button1 } from "../../About/About.styled";
 import {
   colors,
   fonts,
-  device,
   randomColor
 } from "../../../Shared_Styles/Style_Variables/colors";
 

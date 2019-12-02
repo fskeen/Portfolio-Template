@@ -2,8 +2,7 @@ import React from "react";
 import { MainContainer } from "./Skills.styled";
 import {
   SubTitle,
-  Paragraph,
-  SmallSubTitle
+  Paragraph
 } from "../../Shared_Styles/TextStyles";
 
 const Skills = () => {

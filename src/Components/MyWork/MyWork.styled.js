@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import {
   colors,
-  fonts,
-  device,
-  randomColor
+  fonts
 } from "../../Shared_Styles/Style_Variables/colors";
 import { Paragraph } from "./Display/ModalButton/ModalButton.styled";
 
@@ -52,6 +50,13 @@ export const FilterButton = styled.div`
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  transition: transform .3s ease;
+
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform .1s ease;
+  }
 
   &.active {
     color: ${colors.dark};
