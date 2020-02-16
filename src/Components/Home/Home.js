@@ -10,17 +10,14 @@ import {
 const Home = () => {
   return (
     <MainContainer>
-      <SubTitle>Home Page</SubTitle>
+      <SubTitle>Faye Skeen</SubTitle>
       <Paragraph>
-        Quisque nulla justo, gravida scelerisque lobortis in, tincidunt ac orci.
-        Integer placerat sem eu tortor imperdiet, sit amet auctor dolor
-        interdum. Etiam quis lacus condimentum, placerat nisi a, volutpat purus.
-        Nulla laoreet nunc at augue molestie congue. Aliquam blandit nisl eu
-        metus commodo, a sodales augue cursus.
-      </Paragraph>{" "}
-      <Link to="/contact">
-        <Button>CONTACT ME</Button>
-      </Link>
+        Web developer, technical trainer, illustrator, tabletop afficionado.
+      </Paragraph>
+      <Paragraph>
+        Thinking about a new site? Need your old code refactored for a redesign? Heck, just got a great dad joke to share? Check out <Link to="work">my work</Link>, look through <Link to="/about">my skills</Link>, and <Link to="/contact">
+      drop me a message</Link>.
+      </Paragraph>
     </MainContainer>
   );
 };

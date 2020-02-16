@@ -1,12 +1,12 @@
 // COLORS
 
 export const colors = {
-  background: "#1c1c1c",
-  primary: "#c3f73a",
-  text: "#e5edcf",
+  background: "#3C5749d5",
+  primary: "#C5FF99",
+  text: "#CBF3D2",
   dark: "#000",
   navRegular: "#4d4d4e",
-  accent1: "#13CDFF"
+  accent1: "#FF93A7"
 };
 
 // RANDOM COLOR PICKER

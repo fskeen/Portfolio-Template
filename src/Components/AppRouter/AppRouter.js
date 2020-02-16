@@ -4,20 +4,18 @@ import { ModalProvider } from 'styled-react-modal';
 
 import Home from "../Home/Home";
 import About from "../About/About";
-import Skills from "../Skills/Skills";
 import MyWork from "../MyWork/MyWork";
 import Contact from "../Contact/Contact";
 
 function AppRouter() {
   return (
     <ModalProvider>
-      <Switch>
-        <Home exact path="/" component={Home} />
-        <About path="/about" component={About} />
-        <Skills path="/skills" component={Skills} />
-        <MyWork path="/work" component={MyWork} />
-        <Contact path="/contact" component={Contact} />
-      </Switch>
+
+        <Home path="/" component={Home} id="home"/>
+        <About path="/" component={About} id="about"/>
+        <MyWork path="/" component={MyWork} id="work"/>
+        <Contact path="/" component={Contact} id="contact"/>
+
     </ModalProvider>
   );
 }

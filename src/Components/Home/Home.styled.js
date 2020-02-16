@@ -7,10 +7,15 @@ import {
 } from "../../Shared_Styles/Style_Variables/colors";
 
 export const MainContainer = styled.main`
+  background-color: ${colors.background};
   width: 100%;
-  height: 90vh;
-  padding: 7rem 0 0 7rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* height: 90vh; */
+  padding: 7rem 0 0 0 ;
   overflow-y: scroll;
+  /* margin: 0 auto; */
   /* HIDING SCROLL BAR */
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -24,7 +29,7 @@ export const MainContainer = styled.main`
 `;
 
 export const Button = styled.button`
-  margin: 0.5rem;
+  margin: 0.5rem auto;
   width: 18rem;
   display: inline-block;
   padding: 1rem;

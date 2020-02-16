@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { NavLink } from "react-router-dom";
 import { colors, fonts } from "../Style_Variables/colors";
 import styled from "styled-components";
@@ -7,11 +7,15 @@ import { faHome, faCog } from "@fortawesome/free-solid-svg-icons";
 import { faUser, faEye, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const NavBar = () => {
+
+
+
+
   return (
     <Nav>
       <LinksList>
         <ListItem>
-          <StyledNavLink activeClassName="active" exact to="/">
+          <StyledNavLink activeClassName="active" to="/#home" >
             <IconSpan>
               <FontAwesomeIcon icon={faHome} />
             </IconSpan>
@@ -22,45 +26,34 @@ const NavBar = () => {
         </ListItem>
 
         <ListItem>
-          <StyledNavLink to="/about">
+          <StyledNavLink to="/#about">
             <IconSpan>
               <FontAwesomeIcon icon={faUser} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">ABOUT</LinkText>
+              <LinkText className="LinkText">ABOUT ME</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
 
         <ListItem>
-          <StyledNavLink to="/skills">
-            <IconSpan>
-              <FontAwesomeIcon icon={faCog} />
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">SKILLS</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem>
-
-        <ListItem>
-          <StyledNavLink to="/work">
+          <StyledNavLink to="/#work">
             <IconSpan>
               <FontAwesomeIcon icon={faEye} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">WORK</LinkText>
+              <LinkText className="LinkText">MY WORK</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
 
         <ListItem>
-          <StyledNavLink to="/contact">
+          <StyledNavLink to="/#contact" >
             <IconSpan>
               <FontAwesomeIcon icon={faEnvelope} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">CONTACT</LinkText>
+              <LinkText className="LinkText">CONTACT ME</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
@@ -70,12 +63,12 @@ const NavBar = () => {
 };
 
 const Nav = styled.nav`
-  background-color: ${colors.dark};
+  background-color: ${colors.background};
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
-  height: 100vh;
-  width: 70px;
+  height: 55px;
+  width: 100%;
   top: 0;
   position: fixed;
   z-index: 10;
@@ -83,9 +76,10 @@ const Nav = styled.nav`
 
 const LinksList = styled.ul`
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   box-sizing: border-box;
+  width: 50%;
 `;
 
 const ListItem = styled.li`
@@ -94,20 +88,23 @@ const ListItem = styled.li`
   align-items: center;
   height: 5rem;
   box-sizing: border-box;
+  width: 20%;
 `;
 
 const IconSpan = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${colors.navRegular};
+  color: ${colors.primary};
   font-size: 2.25em;
   position: relative;
   top: 0.8rem;
   transition: opacity 0.3s ease-out;
+  width: 100%;
 
   ${ListItem}:hover & {
-    opacity: 0;
+    color: ${colors.accent1};
+
   }
 `;
 
@@ -131,7 +128,11 @@ const LinkText = styled.p`
     color: ${colors.primary};
     opacity: 1;
     text-align: center;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.5s ease-out, transform .5s ease;
+    transform: translateX(6rem);
+  }
+  ${ListItem}:active & {
+    color: ${colors.accent1};
   }
 `;
 
