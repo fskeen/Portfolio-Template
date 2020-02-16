@@ -7,6 +7,7 @@ import {
 } from "../../Shared_Styles/Style_Variables/colors";
 
 export const MainContainer = styled.main`
+  background-color: ${colors.background};
   width: 100%;
   display: flex;
   flex-flow: column;

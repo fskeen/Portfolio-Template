@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { NavLink } from "react-router-dom";
 import { colors, fonts } from "../Style_Variables/colors";
 import styled from "styled-components";
@@ -7,11 +7,15 @@ import { faHome, faCog } from "@fortawesome/free-solid-svg-icons";
 import { faUser, faEye, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const NavBar = () => {
+
+
+
+
   return (
     <Nav>
       <LinksList>
         <ListItem>
-          <StyledNavLink activeClassName="active" exact to="/">
+          <StyledNavLink activeClassName="active" to="/#home" >
             <IconSpan>
               <FontAwesomeIcon icon={faHome} />
             </IconSpan>
@@ -22,7 +26,7 @@ const NavBar = () => {
         </ListItem>
 
         <ListItem>
-          <StyledNavLink to="/about">
+          <StyledNavLink to="/#about">
             <IconSpan>
               <FontAwesomeIcon icon={faUser} />
             </IconSpan>
@@ -33,7 +37,7 @@ const NavBar = () => {
         </ListItem>
 
         <ListItem>
-          <StyledNavLink to="/work">
+          <StyledNavLink to="/#work">
             <IconSpan>
               <FontAwesomeIcon icon={faEye} />
             </IconSpan>
@@ -44,7 +48,7 @@ const NavBar = () => {
         </ListItem>
 
         <ListItem>
-          <StyledNavLink to="/contact">
+          <StyledNavLink to="/#contact" >
             <IconSpan>
               <FontAwesomeIcon icon={faEnvelope} />
             </IconSpan>
@@ -59,7 +63,7 @@ const NavBar = () => {
 };
 
 const Nav = styled.nav`
-  background-color: ${colors.dark};
+  background-color: ${colors.background};
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -91,7 +95,7 @@ const IconSpan = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${colors.navRegular};
+  color: ${colors.primary};
   font-size: 2.25em;
   position: relative;
   top: 0.8rem;
@@ -99,7 +103,7 @@ const IconSpan = styled.span`
   width: 100%;
 
   ${ListItem}:hover & {
-    color: ${colors.primary};
+    color: ${colors.accent1};
 
   }
 `;
@@ -126,6 +130,9 @@ const LinkText = styled.p`
     text-align: center;
     transition: opacity 0.5s ease-out, transform .5s ease;
     transform: translateX(6rem);
+  }
+  ${ListItem}:active & {
+    color: ${colors.accent1};
   }
 `;
 
