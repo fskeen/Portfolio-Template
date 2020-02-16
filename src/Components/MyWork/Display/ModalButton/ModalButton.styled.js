@@ -3,8 +3,7 @@ import {HoverDiv} from '../Display.styled';
 import {
   colors,
   randomColor,
-  fonts,
-  device
+  fonts
 } from "../../../../Shared_Styles/Style_Variables/colors";
 
 export const CloseButton = styled.button`

@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 import {Carousel} from 'react-responsive-carousel';
 import {
-    colors,
-    randomColor,
-    fonts,
-    device
+    colors
   } from "../../../../Shared_Styles/Style_Variables/colors";
 
 export const StyledCarousel = styled(Carousel)`

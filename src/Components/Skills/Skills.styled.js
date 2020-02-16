@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import {
-  colors,
-  fonts,
   device
 } from "../../Shared_Styles/Style_Variables/colors";
 

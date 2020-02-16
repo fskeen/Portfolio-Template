@@ -14,8 +14,8 @@ function ModalCarousel (props) {
             >
             {carousel.map((image, i) => {
             return (
-                <div>
-                    <img src={image} key={i} />
+                <div key={i} >
+                    <img src={image} alt="screenshot of project"/>
                 </div>)
             })}
         </StyledCarousel>
