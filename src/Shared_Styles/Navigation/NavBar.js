@@ -27,18 +27,7 @@ const NavBar = () => {
               <FontAwesomeIcon icon={faUser} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">ABOUT</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem>
-
-        <ListItem>
-          <StyledNavLink to="/skills">
-            <IconSpan>
-              <FontAwesomeIcon icon={faCog} />
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">SKILLS</LinkText>
+              <LinkText className="LinkText">ABOUT ME</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
@@ -49,7 +38,7 @@ const NavBar = () => {
               <FontAwesomeIcon icon={faEye} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">WORK</LinkText>
+              <LinkText className="LinkText">MY WORK</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
@@ -60,7 +49,7 @@ const NavBar = () => {
               <FontAwesomeIcon icon={faEnvelope} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">CONTACT</LinkText>
+              <LinkText className="LinkText">CONTACT ME</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
@@ -72,10 +61,10 @@ const NavBar = () => {
 const Nav = styled.nav`
   background-color: ${colors.dark};
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
-  height: 100vh;
-  width: 70px;
+  height: 55px;
+  width: 100%;
   top: 0;
   position: fixed;
   z-index: 10;
@@ -83,9 +72,10 @@ const Nav = styled.nav`
 
 const LinksList = styled.ul`
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   box-sizing: border-box;
+  width: 50%;
 `;
 
 const ListItem = styled.li`
@@ -94,6 +84,7 @@ const ListItem = styled.li`
   align-items: center;
   height: 5rem;
   box-sizing: border-box;
+  width: 20%;
 `;
 
 const IconSpan = styled.span`
@@ -105,9 +96,11 @@ const IconSpan = styled.span`
   position: relative;
   top: 0.8rem;
   transition: opacity 0.3s ease-out;
+  width: 100%;
 
   ${ListItem}:hover & {
-    opacity: 0;
+    color: ${colors.primary};
+
   }
 `;
 
@@ -131,7 +124,8 @@ const LinkText = styled.p`
     color: ${colors.primary};
     opacity: 1;
     text-align: center;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.5s ease-out, transform .5s ease;
+    transform: translateX(6rem);
   }
 `;
 
