@@ -11,20 +11,20 @@ export const MainContainer = styled.main`
   width: 100%;
   display: flex;
   flex-flow: column;
+  justify-content: center;
   align-items: center;
-  /* height: 90vh; */
-  padding: 7rem 0 0 0 ;
-  overflow-y: scroll;
-  /* margin: 0 auto; */
-  /* HIDING SCROLL BAR */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  margin: 25vh 0;
+  padding: 2rem;
+  box-shadow: 0px 0px 3px black, 5px 5px 0px black, -5px -5px 0px black;
+  border-radius: .23rem;
+  transition: box-shadow .5s ease-out;
   @media ${device.mobileL} {
     max-width: 60rem;
+  }
+
+  &:hover {
+  box-shadow: 0px 0px 3px black, 5px 5px 0px black, -5px -5px 0px black, 10px 10px 0px ${colors.background}, -10px -10px 0px ${colors.background}, 15px 15px 0px black, -15px -15px 0px black;
+
   }
 `;
 
@@ -41,6 +41,7 @@ export const Button = styled.button`
   transition: all 1s ease;
   color: ${randomColor};
   align-self: flex-end;
+  box-shadow: 0px 0px 3px black, 5px 5px 0px black, -5px -5px 0px black;
 
   &:hover {
     cursor: pointer;

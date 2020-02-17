@@ -4,7 +4,7 @@ import {SubTitle, Paragraph, SmallSubTitle} from '../../Shared_Styles/TextStyles
 import SvgAboutMeTitle from "../../Shared_Styles/SVGs/AboutMeTitle";
 
 const About = () => {
-  const skills = ["JavaScript", "React", "HTML", "CSS", "LESS", "React Router", "Node JS", "Express", "Redux", "Material UI", "styled-components", "SQL", "RESTful APIs", "Git", "JSON", "Context API"]
+  const skills = ["JavaScript", "React", "React Native", "TypeScript", "HTML", "LESS & Sass", "React Router", "Node.js", "Express", "Redux", "SQL", "REST APIs", "Context"]
   return (
     <MainContainer id="about">
       <div>

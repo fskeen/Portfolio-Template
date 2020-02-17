@@ -10,7 +10,7 @@ export const MainContainer = styled.main`
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: column;
   position: relative;
   top: 7rem;
@@ -65,5 +65,5 @@ export const FilterButton = styled.div`
 `;
 
 export const Para = styled(Paragraph)`
-  max-width: 80rem;
+  max-width: 60rem;
 `;
