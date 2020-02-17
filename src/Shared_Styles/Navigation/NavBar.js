@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { NavLink } from "react-router-dom";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 import { colors, fonts } from "../Style_Variables/colors";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,7 +31,7 @@ const NavBar = () => {
               <FontAwesomeIcon icon={faUser} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">ABOUT ME</LinkText>
+              <LinkText className="LinkText">ABOUT</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
@@ -42,7 +42,7 @@ const NavBar = () => {
               <FontAwesomeIcon icon={faEye} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">MY WORK</LinkText>
+              <LinkText className="LinkText">WORK</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
@@ -53,7 +53,7 @@ const NavBar = () => {
               <FontAwesomeIcon icon={faEnvelope} />
             </IconSpan>
             <TextSpan>
-              <LinkText className="LinkText">CONTACT ME</LinkText>
+              <LinkText className="LinkText">CONTACT</LinkText>
             </TextSpan>
           </StyledNavLink>
         </ListItem>
@@ -72,6 +72,7 @@ const Nav = styled.nav`
   top: 0;
   position: fixed;
   z-index: 10;
+  box-shadow: 0 2px 2px #000000a0;
 `;
 
 const LinksList = styled.ul`
@@ -129,7 +130,7 @@ const LinkText = styled.p`
     opacity: 1;
     text-align: center;
     transition: opacity 0.5s ease-out, transform .5s ease;
-    transform: translateX(6rem);
+    transform: translateX(5rem);
   }
   ${ListItem}:active & {
     color: ${colors.accent1};
@@ -137,11 +138,11 @@ const LinkText = styled.p`
 `;
 
 const StyledNavLink = styled(NavLink)`
-  &.active {
+  /* &.active {
     ${IconSpan} {
-      color: ${colors.primary};
+      color: blue;
     }
-  }
+  } */
 `;
 
 export default NavBar;

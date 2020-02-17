@@ -34,16 +34,15 @@ export const StyledSVGTitle = styled.div`
 
 export const MainContainer = styled.main`
   width: 100%;
-  height: 90vh;
   padding: 7rem 0 0 0;
   /* overflow-y: scroll;
   /* HIDING SCROLL BAR */
-  scrollbar-width: none;
+  /* scrollbar-width: none;
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
     width: 0;
-    height: 0; */
-  }
+    height: 0;
+  } */
   @media ${device.mobileL} {
     max-width: 60rem;
   }
@@ -54,6 +53,7 @@ export const SkillsList = styled.ul`
   padding: 1rem;
   padding: 1rem;
   display: flex;
+  justify-content: space-between;
   text-align: center;
   align-items: flex-end;
   flex-flow: row wrap;
@@ -62,22 +62,25 @@ export const SkillsList = styled.ul`
 export const SkillsItem = styled.li`
   margin: 0.5rem;
   display: inline-block;
+  background-color: ${colors.background};
   padding: 2rem;
   font-size: 1.8rem;
   font-family: ${fonts.body};
-  border: 1px solid rgb(113, 119, 98);
-  border-radius: 0.7rem;
+  border: 1px solid #00000005;
+  border-radius: 0.23rem;
   transition: all 1s ease;
   color: ${randomColor};
+  box-shadow: 0px 0px 3px black, 0px 0px 0px black, 0px 0px 0px black;
 
   &:hover {
     cursor: pointer;
     color: black;
     border-color: black;
-    background-color: #f9ffea;
-    transition: all 0.2s ease;
-    text-shadow: 2px 2px 0 ${colors.primary};
-    box-shadow: 2px 2px 0px 0px ${colors.primary};
+    background-color: ${colors.primaryTransparent};
+    transition: all 0.5s ease;
+    /* text-shadow: 2px 2px 0 ${colors.primary}; */
+    box-shadow: 0px 0px 3px black, 3px 3px 0px black, -3px -3px 0px black;
+
   }
 
   @media ${device.mobileS} {
