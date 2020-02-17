@@ -14,7 +14,7 @@ const Contact = ({errors, touched}) => {
   let count = -1
 
   return (
-    <StyledForm action="https://formspree.io/xyyyzzwl" method="POST">
+    <StyledForm action="https://formspree.io/xyyyzzwl" method="POST" id="contact">
       <StyledSVGTitle>
         <SvgContactMeTitle />
       </StyledSVGTitle>

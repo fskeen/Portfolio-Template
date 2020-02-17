@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { NavLink } from "react-router-dom";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 import { colors, fonts } from "../Style_Variables/colors";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -6,7 +6,7 @@ import SvgAboutMeTitle from "../../Shared_Styles/SVGs/AboutMeTitle";
 const About = () => {
   const skills = ["JavaScript", "React", "HTML", "CSS", "LESS", "React Router", "Node JS", "Express", "Redux", "Material UI", "styled-components", "SQL", "RESTful APIs", "Git", "JSON", "Context API"]
   return (
-    <MainContainer>
+    <MainContainer id="about">
       <div>
         <StyledSVGTitle>
         <SvgAboutMeTitle />

@@ -11,10 +11,10 @@ function AppRouter() {
   return (
     <ModalProvider>
 
-        <Home path="/" component={Home} id="home"/>
-        <About path="/" component={About} id="about"/>
-        <MyWork path="/" component={MyWork} id="work"/>
-        <Contact path="/" component={Contact} id="contact"/>
+        <Home path="/" component={Home}/>
+        <About path="/" component={About} />
+        <MyWork path="/" component={MyWork} />
+        <Contact path="/" component={Contact} />
 
     </ModalProvider>
   );

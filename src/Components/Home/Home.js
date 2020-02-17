@@ -9,7 +9,7 @@ import {
 
 const Home = () => {
   return (
-    <MainContainer>
+    <MainContainer id="home">
       <SubTitle>Faye Skeen</SubTitle>
       <Paragraph>
         Web developer, technical trainer, illustrator, tabletop afficionado.

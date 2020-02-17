@@ -35,7 +35,7 @@ const MyWork = () => {
   }, [selectedSkill]);
 
   return (
-    <MainContainer>
+    <MainContainer id="work">
       <StyledSVGTitle>
         <MyWorkTitle />
       </StyledSVGTitle>
