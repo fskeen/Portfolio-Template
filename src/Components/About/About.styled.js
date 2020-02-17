@@ -76,9 +76,9 @@ export const SkillsItem = styled.li`
     cursor: pointer;
     color: black;
     border-color: black;
-    background-color: #f9ffead0;
+    background-color: ${colors.primaryTransparent};
     transition: all 0.5s ease;
-    text-shadow: 2px 2px 0 ${colors.primary};
+    /* text-shadow: 2px 2px 0 ${colors.primary}; */
     box-shadow: 0px 0px 3px black, 3px 3px 0px black, -3px -3px 0px black;
 
   }

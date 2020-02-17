@@ -2,7 +2,10 @@
 
 export const colors = {
   background: "#3C5749d5",
+  backgroundSolid: "#3C5749",
+  backgroundDark: "#2d4539",
   primary: "#C5FF99",
+  primaryTransparent: "#C5FF9994",
   text: "#CBF3D2",
   dark: "#000",
   navRegular: "#4d4d4e",
